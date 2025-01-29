@@ -8,18 +8,24 @@
 </head>
 <body>
     <form>
-        <label for="correo">Correo:</label>
-        <input type="email" name="name"><br><br>
-        <label for="mensaje">Mensaje:</label><br>
-        <textarea name="mensaje" id="mensaje" cols="30" rows="4"></textarea><br><br>
-        <label for="clasificacion">Clasificacion: </label>
-        <select name="clasificacion" id="clasificacion">
-            <option>Seleciona una opcion</option>
-            <option value="contratacion">Contratacion</option>
-            <option value="pregunta">Pregunta</option>
-            <option value="otro">Otro</option>
-        </select><br><br>
-        <input type="submit" value="Submit">
+        <div class="mb-3">
+            <label for="correo" class="form-label" placeholder="name@example.com">Correo:</label>
+            <input type="email" name="correo" class="form-control" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje:</label><br>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="4" class="form-control"></textarea><br><br>
+        </div>
+        <div class="mb-3"></div>
+            <label for="clasificacion" class="form-label">Clasificacion: </label>
+            <select name="clasificacion" id="clasificacion" class="form-select">
+                <option>Seleciona una opcion</option>
+                <option value="contratacion">Contratacion</option>
+                <option value="pregunta">Pregunta</option>
+                <option value="otro">Otro</option>
+            </select><br><br>
+        </div>
+        <input type="submit" value="Submit" class="btn btn-primary">
     </form>
 </body>
 </html>
